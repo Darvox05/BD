@@ -1,0 +1,20 @@
+[
+    {
+        "categoria": "Lagers",
+        "cantidad_vendida": 20,
+        "cantidad_stock": 0,
+        "ingreso_ventas": 250
+    },
+    {
+        "categoria": "Ales",
+        "cantidad_vendida": 20,
+        "cantidad_stock": 0,
+        "ingreso_ventas": 268
+    },
+    {
+        "categoria": "Roja",
+        "cantidad_vendida": 10,
+        "cantidad_stock": 0,
+        "ingreso_ventas": 100
+    }
+]

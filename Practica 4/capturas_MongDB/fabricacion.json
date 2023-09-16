@@ -1,0 +1,106 @@
+[
+    {
+        "nombre": "Dark",
+        "descripcion": "cerveza con 15 grados de alcohol",
+        "materiaPrima": [
+            {
+                "nombre": "agua",
+                "cantidad": " 2500 ml"
+            },
+            {
+                "nombre": "malta",
+                "cantidad": " 100 ml"
+            },
+            {
+                "nombre": "lupulo",
+                "cantidad": " 150 ml"
+            },
+            {
+                "nombre": "levadura",
+                "cantidad": " 50 gr"
+            },
+            {
+                "nombre": "cevada",
+                "cantidad": " 100 gr"
+            }
+        ]
+    },
+    {
+        "nombre": "Pale",
+        "descripcion": "cerveza con 12 grados de alcohol",
+        "materiaPrima": [
+            {
+                "nombre": "agua",
+                "cantidad": " 2500 ml"
+            },
+            {
+                "nombre": "malta",
+                "cantidad": " 150 ml"
+            },
+            {
+                "nombre": "lupulo",
+                "cantidad": " 100 ml"
+            },
+            {
+                "nombre": "levadura",
+                "cantidad": " 50 gr"
+            },
+            {
+                "nombre": "cevada",
+                "cantidad": " 80 gr"
+            }
+        ]
+    },
+    {
+        "nombre": "Bocks",
+        "descripcion": "cerveza con 12 grados de alcohol",
+        "materiaPrima": [
+            {
+                "nombre": "agua",
+                "cantidad": " 2500 ml"
+            },
+            {
+                "nombre": "malta",
+                "cantidad": " 120 ml"
+            },
+            {
+                "nombre": "lupulo",
+                "cantidad": " 150 ml"
+            },
+            {
+                "nombre": "levadura",
+                "cantidad": " 50 gr"
+            },
+            {
+                "nombre": "cevada",
+                "cantidad": " 50 gr"
+            }
+        ]
+    },
+    {
+        "nombre": "Stouts",
+        "descripcion": "cerveza con 11 grados de alcohol",
+        "materiaPrima": [
+            {
+                "nombre": "agua",
+                "cantidad": " 2500 ml"
+            },
+            {
+                "nombre": "malta",
+                "cantidad": " 150 ml"
+            },
+            {
+                "nombre": "lupulo",
+                "cantidad": " 100 ml"
+            },
+            {
+                "nombre": "levadura",
+                "cantidad": " 50 gr"
+            },
+            {
+                "nombre": "cevada",
+                "cantidad": " 100 gr"
+            }
+        ]
+    }
+]

@@ -1,0 +1,22 @@
+[
+    {
+        "nombre": "agua",
+        "cantidad": " 17500 ml"
+    },
+    {
+        "nombre": "malta",
+        "cantidad": " 1000 ml"
+    },
+    {
+        "nombre": "lupulo",
+        "cantidad": " 1000 ml"
+    },
+    {
+        "nombre": "levadura",
+        "cantidad": " 500 gr"
+    },
+    {
+        "nombre": "cevada",
+        "cantidad": " 800 gr"
+    }
+]

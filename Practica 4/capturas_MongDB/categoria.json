@@ -1,0 +1,35 @@
+[
+    {
+        "nombre": "Lagers",
+        "precio": 12.5,
+        "L.cerveza": [
+            {
+                "nombre": "Dark"
+            },
+            {
+                "nombre": "pale"
+            }
+        ]
+    },
+    {
+        "nombre": "Ales",
+        "precio": 13.4,
+        "A.cerveza": [
+            {
+                "nombre": "Bocks"
+            },
+            {
+                "nombre": "Stouts"
+            }
+        ]
+    },
+    {
+        "nombre": "Roja",
+        "precio": 10,
+        "R.cerveza": [
+            {
+                "nombre": "Porters"
+            }
+        ]
+    }
+]
