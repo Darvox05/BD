@@ -1,0 +1,74 @@
+Sentencias SQL Daniel Giraldo:
+
+CREATE DATABASE cerveceria;
+USE cerveceria;
+
+ CREATE TABLE cerveza (
+    -> id_cerveza INT PRIMARY KEY NOT NULL AUTO_INCREMENT,
+    -> Nombre VARCHAR(30) NOT NULL,
+    -> Detalle VARCHAR(30) NOT NULL);
+
+    describe cerveza;
++--------------+-------------+------+-----+---------+----------------+
+| Field        | Type        | Null | Key | Default | Extra          |
++--------------+-------------+------+-----+---------+----------------+
+| id_cerveza   | int         | NO   | PRI | NULL    | auto_increment |
+| Nombre       | varchar(30) | NO   |     | NULL    |                |
+| Detalle      | varchar(30) | NO   |     | NULL    |                |
+| id_categoria | int         | YES  | MUL | NULL    |                |
++--------------+-------------+------+-----+---------+----------------+
+
+CREATE TABLE Materia_Prima (
+    -> id_MateriaP INT PRIMARY KEY NOT NULL AUTO_INCREMENT,
+    -> Nombre VARCHAR(30) NOT NULL,
+    -> Detalle VARCHAR(30) NOT NULL);
+
+    describe materia_prima;
++-------------+-------------+------+-----+---------+----------------+
+| Field       | Type        | Null | Key | Default | Extra          |
++-------------+-------------+------+-----+---------+----------------+
+| id_MateriaP | int         | NO   | PRI | NULL    | auto_increment |
+| Nombre      | varchar(30) | NO   |     | NULL    |                |
+| Detalle     | varchar(30) | NO   |     | NULL    |                |
++-------------+-------------+------+-----+---------+----------------+
+
+CREATE TABLE Categoria (
+    -> id_categoria INT PRIMARY KEY NOT NULL AUTO_INCREMENT,
+    -> Nombre VARCHAR(30) NOT NULL,
+    -> Detalle VARCHAR(30) NOT NULL);
+
+    describe categoria;
++--------------+-------------+------+-----+---------+----------------+
+| Field        | Type        | Null | Key | Default | Extra          |
++--------------+-------------+------+-----+---------+----------------+
+| id_categoria | int         | NO   | PRI | NULL    | auto_increment |
+| Nombre       | varchar(30) | NO   |     | NULL    |                |
+| Detalle      | varchar(30) | NO   |     | NULL    |                |
++--------------+-------------+------+-----+---------+----------------+
+
+CREATE TABLE tipo (
+    -> id_tipo INT PRIMARY KEY NOT NULL AUTO_INCREMENT,
+    -> Nombre VARCHAR(30) NOT NULL);
+
+ALTER TABLE cerveza ADD COLUMN id_categoria INT;
+ALTER TABLE cerveza ADD FOREIGN KEY (id_categoria) REFERENCES categoria(id_categoria);
+
+CREATE TABLE tipo_categoria(
+    -> id_tipoc INT PRIMARY KEY AUTO_INCREMENT);
+
+ALTER TABLE tipo_categoria ADD COLUMN id_tipo INT;
+ALTER TABLE tipo_categoria ADD FOREIGN KEY (id_tipo) REFERENCES tipo(id_tipo);
+
+ALTER TABLE tipo_categoria ADD COLUMN id_categoria INT;
+ALTER TABLE tipo_categoria ADD FOREIGN KEY (id_categoria) REFERENCES categoria(id_categoria);
+
+CREATE TABLE cerveza_materiap(
+    -> idcerveza_materiap INT PRIMARY KEY AUTO_INCREMENT,
+    -> cantidad VARCHAR(255) NOT NULL,
+    -> unidad VARCHAR(255) NOT NULL);
+
+ALTER TABLE cerveza_materiap ADD COLUMN id_cerveza INT;
+ALTER TABLE cerveza_materiap ADD FOREIGN KEY (id_cerveza) REFERENCES cerveza(id_cerveza);
+
+ALTER TABLE cerveza_materiap ADD COLUMN id_materiap INT;
+ALTER TABLE cerveza_materiap ADD FOREIGN KEY (id_materiap) REFERENCES materia_prima(id_MateriaP);
