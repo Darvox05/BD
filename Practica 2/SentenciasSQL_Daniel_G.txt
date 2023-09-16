@@ -8,15 +8,43 @@ USE cerveceria;
     -> Nombre VARCHAR(30) NOT NULL,
     -> Detalle VARCHAR(30) NOT NULL);
 
+    describe cerveza;
++--------------+-------------+------+-----+---------+----------------+
+| Field        | Type        | Null | Key | Default | Extra          |
++--------------+-------------+------+-----+---------+----------------+
+| id_cerveza   | int         | NO   | PRI | NULL    | auto_increment |
+| Nombre       | varchar(30) | NO   |     | NULL    |                |
+| Detalle      | varchar(30) | NO   |     | NULL    |                |
+| id_categoria | int         | YES  | MUL | NULL    |                |
++--------------+-------------+------+-----+---------+----------------+
+
 CREATE TABLE Materia_Prima (
     -> id_MateriaP INT PRIMARY KEY NOT NULL AUTO_INCREMENT,
     -> Nombre VARCHAR(30) NOT NULL,
     -> Detalle VARCHAR(30) NOT NULL);
 
+    describe materia_prima;
++-------------+-------------+------+-----+---------+----------------+
+| Field       | Type        | Null | Key | Default | Extra          |
++-------------+-------------+------+-----+---------+----------------+
+| id_MateriaP | int         | NO   | PRI | NULL    | auto_increment |
+| Nombre      | varchar(30) | NO   |     | NULL    |                |
+| Detalle     | varchar(30) | NO   |     | NULL    |                |
++-------------+-------------+------+-----+---------+----------------+
+
 CREATE TABLE Categoria (
     -> id_categoria INT PRIMARY KEY NOT NULL AUTO_INCREMENT,
     -> Nombre VARCHAR(30) NOT NULL,
     -> Detalle VARCHAR(30) NOT NULL);
+
+    describe categoria;
++--------------+-------------+------+-----+---------+----------------+
+| Field        | Type        | Null | Key | Default | Extra          |
++--------------+-------------+------+-----+---------+----------------+
+| id_categoria | int         | NO   | PRI | NULL    | auto_increment |
+| Nombre       | varchar(30) | NO   |     | NULL    |                |
+| Detalle      | varchar(30) | NO   |     | NULL    |                |
++--------------+-------------+------+-----+---------+----------------+
 
 CREATE TABLE tipo (
     -> id_tipo INT PRIMARY KEY NOT NULL AUTO_INCREMENT,
